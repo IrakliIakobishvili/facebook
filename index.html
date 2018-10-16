@@ -1,1 +1,501 @@
-<h1>Irakli</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Facebook.com</title>
+</head>
+<body>
+    <header class="main-header">
+        <div class="wrapper">        
+        <div class="container">
+            <ul class="main-header__list main-header__list--left">
+                <li class="main-header__list__item">
+                    <a class="main-header__list__item__link logo border-left-remove" href="#"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li class="main-header__list__item main-header__list__item--search">
+                    <input type="text" name="search" id="search" placeholder="Search">
+                    <button id="btn"><i class="fas fa-search"></i></button>
+                </li>
+            </ul><!--main-header__list left-->
+            <ul class="main-header__list main-header__list--right">
+                <li class="main-header__list__item main-header__list__item--text">
+                    <img class="profile-img" src="images/user/irakli.png" alt="Irakli">
+                    <a class="main-header__list__item__link border-left-remove" href="#">Irakli</a>
+                </li>
+                <li class="main-header__list__item main-header__list__item--text"><a class="main-header__list__item__link" href="#">Home</a></li>
+                <li class="main-header__list__item main-header__list__item--text"><a class="main-header__list__item__link" href="#">Find Friends</a></li>
+                <li class="main-header__list__item"><a class="main-header__list__item__link main-header__list__item--icon" href="#"><i class="fas fa-user-friends"></i></a></li>
+                <li class="main-header__list__item"><a class="main-header__list__item__link main-header__list__item--icon border-left-remove" href="#"><i class="fab fa-facebook-messenger"></i></a></li>
+                <li class="main-header__list__item"><a class="main-header__list__item__link main-header__list__item--icon border-left-remove" href="#"><i class="fas fa-bell"></i></a></li>
+                <li class="main-header__list__item"><a class="main-header__list__item__link main-header__list__item--icon" href="#"><i class="fas fa-question-circle"></i></a></li>
+                <li class="main-header__list__item main-header__list__item--dropdown" id="header-nav-dropdown-item">
+                    <a class="main-header__list__item__link main-header__list__item--icon border-left-remove" href="#"><i class="fas fa-caret-down" id="fa-caret-down"></i></a>
+                    <ul class="main-header__list__item__dropdown" id="header-nav-dropdown-list">
+                        <span class="arrow"></span>
+                        <li class="main-header__list__item__dropdown__item">
+                            <a class="main-header__list__item__dropdown__item__link" href="#">Create Page</a>
+                        </li>
+                        <li class="main-header__list__item__dropdown__item">
+                            <a class="main-header__list__item__dropdown__item__link" href="#">New Groups</a>
+                        </li>
+                        <li class="main-header__list__item__dropdown__item">
+                            <a class="main-header__list__item__dropdown__item__link" href="#">Create Ads</a>
+                        </li>
+                        <li class="main-header__list__item__dropdown__item">
+                            <a class="main-header__list__item__dropdown__item__link" href="#">Advertising on Facebook</a>
+                        </li>
+                        <li class="main-header__list__item__dropdown__item">
+                            <a class="main-header__list__item__dropdown__item__link" href="#">Activity Log</a>
+                        </li>
+                        <li class="main-header__list__item__dropdown__item">
+                            <a class="main-header__list__item__dropdown__item__link" href="#">News Feed Preferences</a>
+                        </li>
+                        <li class="main-header__list__item__dropdown__item">
+                            <a class="main-header__list__item__dropdown__item__link" href="#">Settings</a>
+                        </li>
+                        <li class="main-header__list__item__dropdown__item">
+                            <a class="main-header__list__item__dropdown__item__link" href="#">Log Out</a>
+                        </li>
+                    </ul>
+                </li>               
+            </ul><!--main-header__list right-->
+        </div><!--container-->
+        </div><!--wrapper-->
+    </header><!--main-header-->
+    <section class="main-section">
+        <div class="wrapper">        
+        <div class="container">
+            <aside class="sidebar sidebar-left">
+                <h3 class="sidebar-left__heading sidebar-left__heading--profile">
+                    <a href="#">
+                        <img src="images/user/irakli.png" alt="Irakli Iakobishvili">
+                        <span>Irakli Iakobishvili</span>
+                    </a>
+                </h3>
+                <ul class="sidebar-left__list sidebar-left__list--user-feed">
+                    <li class="sidebar-left__list__item sidebar-left__list--user-feed__item--news sidebar-left__list--active"><a title="News Feed" href="#">News Feed</a></li>
+                    <li class="sidebar-left__list__item sidebar-left__list--user-feed__item--messenger"><a class="messenger" title="Messenger" href="#">Messenger</a></li>                    
+                </ul>
+                <h3 class="sidebar-left__heading sidebar-left__heading--shortcut">Shortcuts</h3>
+                <ul class="sidebar-left__list sidebar-left__list--shortcuts">
+                    <li class="sidebar-left__list__item"><a title="ისრაელის ტექჰაბი - კურსი 2" href="#">ისრაელის ტექჰაბი...</a></li>
+                    <li class="sidebar-left__list__item"><a title="Ethical Hacker Community" href="#">Ethical Hacker Co...</a></li>                    
+                    <li class="sidebar-left__list__item"><a title="Graphic Design" href="#">Graphic Design</a></li>
+                    <li class="sidebar-left__list__item"><a title="HTML CSS JAVASCRIPT ✪" href="#">HTML CSS JAVAS...</a></li>
+                    <li class="sidebar-left__list__item"><a title="Cyber Security Group - CSG" href="#">Cyber Security Gro...</a></li>                    
+                </ul>
+                <h3 class="sidebar-left__heading sidebar-left__heading--shortcut">Explore</h3>
+                <ul class="sidebar-left__list sidebar-left__list--explore">
+                    <li class="sidebar-left__list__item sidebar-left__list__item--groups"><a title="Groups" href="#">Groups</a></li>
+                    <li class="sidebar-left__list__item sidebar-left__list__item--events"><a title="Events" href="#">Events</a></li>                    
+                    <li class="sidebar-left__list__item sidebar-left__list__item--pages"><a title="Pages" href="#">Pages</a></li>
+                    <li class="sidebar-left__list__item sidebar-left__list__item--saved"><a title="Saved" href="#">Saved</a></li>
+                    <li class="sidebar-left__list__item sidebar-left__list__item--jobs"><a title="Jobs" href="#">Jobs</a></li>   
+                    <li class="sidebar-left__list__item sidebar-left__list__item--see-more"><a class="sidebar-left__list__item__link--see-more" href="#">See More...</a></li>               
+                </ul>
+                <h3 class="sidebar-left__heading sidebar-left__heading--create">Create</h3>
+                <ul class="sidebar-left__list sidebar-left__list--create">
+                    <li class="sidebar-left__list__item sidebar-left__list__item--ad"><a href="#">Ad</a></li>
+                    <li class="sidebar-left__list__item sidebar-left__list__item--page"><a href="#">Page</a></li>                    
+                    <li class="sidebar-left__list__item sidebar-left__list__item--group"><a href="#">Group</a></li>
+                    <li class="sidebar-left__list__item sidebar-left__list__item--event"><a href="#">Event</a></li>              
+                </ul>
+            </aside><!--sidebar-left-->
+            <main class="main-content">
+                <section class="main-content__make-post">
+                    <div class="main-content__make-post__buttons_box main-content__make-post__buttons_box--top">
+                        <a class="main-content__make-post__buttons_box__link main-content__make-post__buttons_box__link--post main-content__make-post__buttons_box__link--active" href="#">Make Post</a>
+                        <a class="main-content__make-post__buttons_box__link main-content__make-post__buttons_box__link--album" href="#" title="Choose a file to upload">Photo/Video Album</a>
+                        <a class="main-content__make-post__buttons_box__link main-content__make-post__buttons_box__link--live" href="#">Live Video</a>
+                    </div>
+                    <div class="main-content__posting-box">
+                        <a href=""><img class="main-content__posting-box__img" src="images/user/irakli_big.png" alt="Irakli Iakobishvili"></a>
+                        <textarea name="posts" id="posts-textarea" placeholder="What's on your mind, irakli?"></textarea>
+                        <!-- <span>What's on your mind, irakli?</span> -->
+                        <ul class="main-content__posting-box__list">
+                            <li class="main-content__posting-box__list__item"><a class="main-content__posting-box__list__link main-content__posting-box__list--list" href="">List</a></li>
+                            <li class="main-content__posting-box__list__item"><a class="main-content__posting-box__list__link main-content__posting-box__list--photo-video" href="">Photo/Video</a></li>
+                            <li class="main-content__posting-box__list__item"><a class="main-content__posting-box__list__link main-content__posting-box__list--tag-friends" href="">Tag Friends</a></li>
+                            <li class="main-content__posting-box__list__item"><a class="main-content__posting-box__list__link main-content__posting-box__list--dots" href=""><span>...</span></a></li>
+                        </ul>
+                    </div>
+                </section><!--main-content__make-post-->
+                <section class="main-content__post-box">
+                    <header class="main-content__post-box__header">
+                        <a href=""><img src="images/posts/irisi/irisi_logo.png" alt="" class="main-content__post-box__header__image"></a>
+                        <div class="main-content__post-box__header__author">
+                            <a class="main-content__post-box__header__author__link" href="#">IriSee • ირისი</a>
+                            <span class="main-content__post-box__header__author__date">Sponsored <a title="Public" href="" class="main-content__post-box__header__author__date__status"></a></span>
+                        </div>
+                        <div class="main-content__post-box__header__menu">...</div>
+                    </header>
+                    <article class="main-content__post-box__article">
+                        <div class="main-content__post-box__article__description">
+                            <p>უნიკალური შანსი ირისელებს!!!🍁🍂🍁 <br>
+                                შეუკვეთე ნებისმიერი რესტორნიდან <br>
+                                და მიიღე ფასდაკლება: <br>
+                                💢15 ლარიდან -5ლარი <br>
+                                💢30 ლარიდან -10 ლარი. <br>
+                                <a href="#">www.irisee.ge</a> <br>
+                                <p>იჩქარეთ! აქციის პერიოდი შეზღუდულია.</p>
+                                <a href="#">#განავითარექართული</a>
+                                <a href="#">#გახდიირისელი</a>
+                                <a href="#">#დაზოგემეტი</a>
+                                </p>
+                        </div>    
+                        <a href="#"><img class="main-content__post-box__article__img" src="images/posts/irisi/irisi.jpg" alt="Irisi"></a> 
+                        <div class="main-content__post-box__article__reaction-box">
+                            <div class="main-content__post-box__article__reaction-box__smiles"><a href="">476</a></div>
+                            <div class="main-content__post-box__article__reaction-box__comments"><a href="">18 Comments</a>&nbsp;&nbsp;<a href="">9 Shares</a></div>
+                        </div>     
+                        <div class="main-content__post-box__article__react-box">
+                            <a href="#" class="main-content__post-box__article__react-box__link main-content__post-box__article__react-box__link--like">Like</a>
+                            <a href="#" class="main-content__post-box__article__react-box__link main-content__post-box__article__react-box__link--comments">Comments</a>
+                            <a href="#" class="main-content__post-box__article__react-box__link main-content__post-box__article__react-box__link--share">Share</a>
+                        </div>             
+                    </article>
+                </section><!--main-content__post-box-->
+                <section class="main-content__post-box">
+                    <header class="main-content__post-box__header">
+                        <a href=""><img src="images/posts/irisi/irisi_logo.png" alt="" class="main-content__post-box__header__image"></a>
+                        <div class="main-content__post-box__header__author">
+                            <a class="main-content__post-box__header__author__link" href="#">Elit Electronics • ელიტ ელექტრონიქსი</a>
+                            <span class="main-content__post-box__header__author__date">Sponsored <a title="Public" href="" class="main-content__post-box__header__author__date__status"></a></span>
+                        </div>
+                        <div class="main-content__post-box__header__menu">...</div>
+                    </header>
+                    <article class="main-content__post-box__article">
+                        <div class="main-content__post-box__article__description">
+                            <p>📢📢 სპეციალური შემოთავაზება Huawei-ს სმარტფონებზე ელიტ ელექტრონიქსში 👇<br>
+                                ☝️ შეიძინე Huawei Mate 20 Lite და მიიღე საჩუქრად ყურსასმენი 🎧 Marshall Major 2 ან 500 ლარიანი ვაუჩერი<br>
+                                ✌️ შეიძინე Huawei P20 Pro და მიიღე საჩუქრად 1000  ლარიანი ვაუჩერი<br>
+                                👌 შეიძინე Huawei P20 და მიიღე საჩუქრად 2000 ლარიანი ვაუჩერი ▶️ იარე ჰუავეის გზით ✔️
+                                </p>
+                        </div>    
+                        <a href="#"><img class="main-content__post-box__article__img" src="images/posts/elit/elit.png" alt="Elit Electronics"></a> 
+                        <div class="main-content__post-box__article__reaction-box">
+                            <div class="main-content__post-box__article__reaction-box__smiles main-content__post-box__article__reaction-box__smiles--elit"><a href="">1K</a></div>
+                            <div class="main-content__post-box__article__reaction-box__comments"><a href="">23 Comments</a>&nbsp;&nbsp;<a href="">24 Shares</a></div>
+                        </div>     
+                        <div class="main-content__post-box__article__react-box">
+                            <a href="#" class="main-content__post-box__article__react-box__link main-content__post-box__article__react-box__link--like">Like</a>
+                            <a href="#" class="main-content__post-box__article__react-box__link main-content__post-box__article__react-box__link--comments">Comments</a>
+                            <a href="#" class="main-content__post-box__article__react-box__link main-content__post-box__article__react-box__link--share">Share</a>
+                        </div>             
+                    </article>
+                </section><!--main-content__post-box-->
+                <section class="main-content__post-box">
+                    <header class="main-content__post-box__header">
+                        <a href=""><img src="images/posts/irisi/irisi_logo.png" alt="" class="main-content__post-box__header__image"></a>
+                        <div class="main-content__post-box__header__author">
+                            <a class="main-content__post-box__header__author__link" href="#">IriSee • ირისი</a>
+                            <span class="main-content__post-box__header__author__date">Sponsored <a title="Public" href="" class="main-content__post-box__header__author__date__status"></a></span>
+                        </div>
+                        <div class="main-content__post-box__header__menu">...</div>
+                    </header>
+                    <article class="main-content__post-box__article">
+                        <div class="main-content__post-box__article__description">
+                            <p>უნიკალური შანსი ირისელებს!!!🍁🍂🍁 <br>
+                                შეუკვეთე ნებისმიერი რესტორნიდან <br>
+                                და მიიღე ფასდაკლება: <br>
+                                💢15 ლარიდან -5ლარი <br>
+                                💢30 ლარიდან -10 ლარი. <br>
+                                <a href="#">www.irisee.ge</a> <br>
+                                <p>იჩქარეთ! აქციის პერიოდი შეზღუდულია.</p>
+                                <a href="#">#განავითარექართული</a>
+                                <a href="#">#გახდიირისელი</a>
+                                <a href="#">#დაზოგემეტი</a>
+                                </p>
+                        </div>    
+                        <a href="#"><img class="main-content__post-box__article__img" src="images/posts/irisi/irisi.jpg" alt="Irisi"></a> 
+                        <div class="main-content__post-box__article__reaction-box">
+                            <div class="main-content__post-box__article__reaction-box__smiles"><a href="">476</a></div>
+                            <div class="main-content__post-box__article__reaction-box__comments"><a href="">18 Comments</a>&nbsp;&nbsp;<a href="">9 Shares</a></div>
+                        </div>     
+                        <div class="main-content__post-box__article__react-box">
+                            <a href="#" class="main-content__post-box__article__react-box__link main-content__post-box__article__react-box__link--like">Like</a>
+                            <a href="#" class="main-content__post-box__article__react-box__link main-content__post-box__article__react-box__link--comments">Comments</a>
+                            <a href="#" class="main-content__post-box__article__react-box__link main-content__post-box__article__react-box__link--share">Share</a>
+                        </div>             
+                    </article>
+                </section><!--main-content__post-box-->
+                <section class="main-content__post-box">
+                    <header class="main-content__post-box__header">
+                        <a href=""><img src="images/posts/irisi/irisi_logo.png" alt="" class="main-content__post-box__header__image"></a>
+                        <div class="main-content__post-box__header__author">
+                            <a class="main-content__post-box__header__author__link" href="#">Elit Electronics • ელიტ ელექტრონიქსი</a>
+                            <span class="main-content__post-box__header__author__date">Sponsored <a title="Public" href="" class="main-content__post-box__header__author__date__status"></a></span>
+                        </div>
+                        <div class="main-content__post-box__header__menu">...</div>
+                    </header>
+                    <article class="main-content__post-box__article">
+                        <div class="main-content__post-box__article__description">
+                            <p>📢📢 სპეციალური შემოთავაზება Huawei-ს სმარტფონებზე ელიტ ელექტრონიქსში 👇<br>
+                                ☝️ შეიძინე Huawei Mate 20 Lite და მიიღე საჩუქრად ყურსასმენი 🎧 Marshall Major 2 ან 500 ლარიანი ვაუჩერი<br>
+                                ✌️ შეიძინე Huawei P20 Pro და მიიღე საჩუქრად 1000  ლარიანი ვაუჩერი<br>
+                                👌 შეიძინე Huawei P20 და მიიღე საჩუქრად 2000 ლარიანი ვაუჩერი ▶️ იარე ჰუავეის გზით ✔️
+                                </p>
+                        </div>    
+                        <a href="#"><img class="main-content__post-box__article__img" src="images/posts/elit/elit.png" alt="Elit Electronics"></a> 
+                        <div class="main-content__post-box__article__reaction-box">
+                            <div class="main-content__post-box__article__reaction-box__smiles main-content__post-box__article__reaction-box__smiles--elit"><a href="">1K</a></div>
+                            <div class="main-content__post-box__article__reaction-box__comments"><a href="">23 Comments</a>&nbsp;&nbsp;<a href="">24 Shares</a></div>
+                        </div>     
+                        <div class="main-content__post-box__article__react-box">
+                            <a href="#" class="main-content__post-box__article__react-box__link main-content__post-box__article__react-box__link--like">Like</a>
+                            <a href="#" class="main-content__post-box__article__react-box__link main-content__post-box__article__react-box__link--comments">Comments</a>
+                            <a href="#" class="main-content__post-box__article__react-box__link main-content__post-box__article__react-box__link--share">Share</a>
+                        </div>             
+                    </article>
+                </section><!--main-content__post-box-->
+            </main>
+            <aside class="sidebar sidebar-right">
+                <section class="sidebar-right__stories">
+                    <header class="sidebar-right__stories__header">
+                        <h3><a href="">Stories</a></h3>
+                        <div>
+                            <a href="">Archive</a>
+                            <span class="sidebar-right__stories__header__bullet">·</span>
+                            <a href="">Settings</a>
+                        </div>
+                    </header>
+                    <div class="sidebar-right__stories__box sidebar-right__stories__box--my-story">
+                        <div class="sidebar-right__stories__box__img-box">
+                            <a class="sidebar-right__stories__box__img-box__link__img" href="">
+                                <div class="vertical"></div>
+                                <div class="horizontal"></div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="">Add to Your Story</a>
+                            <span>Share a photo, video or write something</span>
+                        </div>
+                    </div> 
+                    <div class="sidebar-right__stories__box">
+                        <div class="sidebar-right__stories__box__img-box"><a class="sidebar-right__stories__box__img-box__link__img" href=""><img src="images/stories/marketer.png" alt="Marketer"></a></div>
+                        <div>
+                            <a href="#">Marketer.ge</a>
+                            <span>2 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="sidebar-right__stories__box">
+                        <div class="sidebar-right__stories__box__img-box"><a class="sidebar-right__stories__box__img-box__link__img" href=""><img src="images/stories/dennis.jpg" alt="Dennis"></a></div>
+                        <div>
+                            <a href="#">Dennis J Smith</a>
+                            <span>18 hours ago</span>
+                        </div>
+                    </div>  
+                    <div class="sidebar-right__stories__box">
+                        <div class="sidebar-right__stories__box__img-box"><a class="sidebar-right__stories__box__img-box__link__img" href=""><img src="images/stories/saba.png" alt="Saba"></a></div>
+                        <div>
+                            <a href="#"><strong>საბა</strong> • SABA</a>
+                            <span>20 hours ago</span>
+                        </div>
+                    </div>                                    
+                </section><!--sidebar-right__stories-->
+                <div class="sticky">
+                    <section class="sidebar-right__ads">
+                            <header class="sidebar-right__stories__header">
+                                <h3><a href="">Sponsored</a></h3>
+                                <div>
+                                    <a href="">Create Ad</a>
+                                </div>
+                            </header>
+                            <div class="sidebar-right__ads__ad">
+                                <img src="images/ads/ad1.jpg" alt="becomeasuperlearner.com">
+                                <h3><a href="#">Hey, What Happened?</a></h3>
+                                <a href="">becomeasuperlearner.com/</a>
+                                <p>Hey there, I noticed you were interested in taking your learning ability to the next level...</p>
+                            </div><!--sidebar-right__ads__ad-->
+                        </section><!--sidebar-right__ads-->
+                        <section class="sidebar-right__languages">
+                            <div>
+                                <span>English (US)</span>
+                                <a href="#">ქართული</a><div class="sidebar-right__stories__header__bullet_2">·</div>
+                                <a href="#">Русский</a><div class="sidebar-right__stories__header__bullet_2">·</div>
+                                <a href="#">Español</a><div class="sidebar-right__stories__header__bullet_2">·</div>
+                                <a href="#">Português (Brasil)</a>
+                            </div>
+                            <div>
+                                <a class="sidebar-right__languages_button" href="">
+                                    <div class="vertical"></div>
+                                    <div class="horizontal"></div>
+                                </a>
+                            </div>
+                        </section><!--sidebar-right__languages-->
+                        <section class="sidebar-right__settings">
+                            <a href="#">Privacy</a><div class="sidebar-right__stories__header__bullet_2">·</div>
+                            <a href="#">Terms</a><div class="sidebar-right__stories__header__bullet_2">·</div>
+                            <a href="#">Advertising</a><div class="sidebar-right__stories__header__bullet_2">·</div>
+                            <a href="#" class="sidebar-right__settings__link--choices">Ad Choices</a><div class="sidebar-right__stories__header__bullet_2">·</div>
+                            <a href="#">Cookies</a><div class="sidebar-right__stories__header__bullet_2">·</div>
+                            <a href="#" class="sidebar-right__settings__link--more">More</a><br>
+                            <span>Facebook © 2018</span>
+                        </section><!--sidebar-right__settings-->
+                </div><!--sticky-->
+            </aside><!--sidebar sidebar-right-->
+            <div class="chat-sidebar">
+                <div class="chat-sidebar__friend-box">
+                    <img class="chat-sidebar__friend-box__img" src="images/friends/ana.jpg" alt="Ana Mchedlishvili">
+                    <span class="chat-sidebar__friend-box__name">Ana Mchedlishvili</span>
+                    <span class="chat-sidebar__friend-box__online">
+                        <span class="chat-sidebar__friend-box__online__bullet"></span>
+                    </span>
+                </div><!--chat-sidebar__friend-box-->
+                <div class="chat-sidebar__friend-box">
+                    <img class="chat-sidebar__friend-box__img" src="images/friends/parunov.jpg" alt="Giorgi Parunov">
+                    <span class="chat-sidebar__friend-box__name">Giorgi Parunov</span>
+                    <span class="chat-sidebar__friend-box__online">
+                        3h
+                    </span>
+                </div><!--chat-sidebar__friend-box-->
+                <div class="chat-sidebar__friend-box">
+                    <img class="chat-sidebar__friend-box__img" src="images/friends/buka.jpg" alt="ბუკა მირცხულავა">
+                    <span class="chat-sidebar__friend-box__name">ბუკა მირცხულავა</span>
+                    <span class="chat-sidebar__friend-box__online">
+                        <span class="chat-sidebar__friend-box__online__bullet"></span>
+                    </span>
+                </div><!--chat-sidebar__friend-box-->
+                <div class="chat-sidebar__friend-box">
+                    <img class="chat-sidebar__friend-box__img" src="images/friends/tami.jpg" alt="Tami Churadze">
+                    <span class="chat-sidebar__friend-box__name">Tami Churadze</span>
+                    <span class="chat-sidebar__friend-box__online">
+                        <span class="chat-sidebar__friend-box__online__bullet"></span>
+                    </span>
+                </div><!--chat-sidebar__friend-box-->
+                <div class="chat-sidebar__friend-box">
+                    <img class="chat-sidebar__friend-box__img" src="images/friends/lasha.jpg" alt="Lasha Magradze">
+                    <span class="chat-sidebar__friend-box__name">Lasha Magradze</span>
+                    <span class="chat-sidebar__friend-box__online">
+                        5m
+                    </span>
+                </div><!--chat-sidebar__friend-box-->
+                <div class="chat-sidebar__friend-box">
+                    <img class="chat-sidebar__friend-box__img" src="images/friends/tekle.jpg" alt="თეკლე">
+                    <span class="chat-sidebar__friend-box__name">თეკლე</span>
+                    <span class="chat-sidebar__friend-box__online">
+                        <span class="chat-sidebar__friend-box__online__bullet"></span>
+                    </span>
+                </div><!--chat-sidebar__friend-box-->
+                <div class="chat-sidebar__friend-box">
+                    <img class="chat-sidebar__friend-box__img" src="images/friends/nika.jpg" alt="Nika Grdzelidze">
+                    <span class="chat-sidebar__friend-box__name">Nika Grdzelidze</span>
+                    <span class="chat-sidebar__friend-box__online">
+                        <span class="chat-sidebar__friend-box__online__bullet"></span>
+                    </span>
+                </div><!--chat-sidebar__friend-box-->
+                <div class="chat-sidebar__friend-box">
+                    <img class="chat-sidebar__friend-box__img" src="images/friends/guga.jpg" alt="Guga Chechelashvili">
+                    <span class="chat-sidebar__friend-box__name">Guga Chechelashvili</span>
+                    <span class="chat-sidebar__friend-box__online">
+                        <span class="chat-sidebar__friend-box__online__bullet"></span>
+                    </span>
+                </div><!--chat-sidebar__friend-box-->
+                <div class="chat-sidebar__friend-box">
+                    <img class="chat-sidebar__friend-box__img" src="images/friends/mariami.jpg" alt="Mariam Sarjveladze">
+                    <span class="chat-sidebar__friend-box__name">Mariam Sarjveladze</span>
+                    <span class="chat-sidebar__friend-box__online">
+                        1h
+                    </span>
+                </div><!--chat-sidebar__friend-box-->
+                <div class="chat-sidebar__friend-box">
+                    <img class="chat-sidebar__friend-box__img" src="images/friends/ana.jpg" alt="Ana Mchedlishvili">
+                    <span class="chat-sidebar__friend-box__name">Ana Mchedlishvili</span>
+                    <span class="chat-sidebar__friend-box__online">
+                        <span class="chat-sidebar__friend-box__online__bullet"></span>
+                    </span>
+                </div><!--chat-sidebar__friend-box-->
+                <div class="chat-sidebar__friend-box">
+                    <img class="chat-sidebar__friend-box__img" src="images/friends/parunov.jpg" alt="Giorgi Parunov">
+                    <span class="chat-sidebar__friend-box__name">Giorgi Parunov</span>
+                    <span class="chat-sidebar__friend-box__online">
+                        3h
+                    </span>
+                </div><!--chat-sidebar__friend-box-->
+                <div class="chat-sidebar__friend-box">
+                    <img class="chat-sidebar__friend-box__img" src="images/friends/buka.jpg" alt="ბუკა მირცხულავა">
+                    <span class="chat-sidebar__friend-box__name">ბუკა მირცხულავა</span>
+                    <span class="chat-sidebar__friend-box__online">
+                        <span class="chat-sidebar__friend-box__online__bullet"></span>
+                    </span>
+                </div><!--chat-sidebar__friend-box-->
+                <div class="chat-sidebar__friend-box">
+                    <img class="chat-sidebar__friend-box__img" src="images/friends/tami.jpg" alt="Tami Churadze">
+                    <span class="chat-sidebar__friend-box__name">Tami Churadze</span>
+                    <span class="chat-sidebar__friend-box__online">
+                        <span class="chat-sidebar__friend-box__online__bullet"></span>
+                    </span>
+                </div><!--chat-sidebar__friend-box-->
+                <div class="chat-sidebar__friend-box">
+                    <img class="chat-sidebar__friend-box__img" src="images/friends/lasha.jpg" alt="Lasha Magradze">
+                    <span class="chat-sidebar__friend-box__name">Lasha Magradze</span>
+                    <span class="chat-sidebar__friend-box__online">
+                        5m
+                    </span>
+                </div><!--chat-sidebar__friend-box-->
+                <div class="chat-sidebar__friend-box">
+                    <img class="chat-sidebar__friend-box__img" src="images/friends/tekle.jpg" alt="თეკლე">
+                    <span class="chat-sidebar__friend-box__name">თეკლე</span>
+                    <span class="chat-sidebar__friend-box__online">
+                        <span class="chat-sidebar__friend-box__online__bullet"></span>
+                    </span>
+                </div><!--chat-sidebar__friend-box-->
+                <div class="chat-sidebar__friend-box">
+                    <img class="chat-sidebar__friend-box__img" src="images/friends/nika.jpg" alt="Nika Grdzelidze">
+                    <span class="chat-sidebar__friend-box__name">Nika Grdzelidze</span>
+                    <span class="chat-sidebar__friend-box__online">
+                        <span class="chat-sidebar__friend-box__online__bullet"></span>
+                    </span>
+                </div><!--chat-sidebar__friend-box-->
+                <div class="chat-sidebar__friend-box">
+                    <img class="chat-sidebar__friend-box__img" src="images/friends/guga.jpg" alt="Guga Chechelashvili">
+                    <span class="chat-sidebar__friend-box__name">Guga Chechelashvili</span>
+                    <span class="chat-sidebar__friend-box__online">
+                        <span class="chat-sidebar__friend-box__online__bullet"></span>
+                    </span>
+                </div><!--chat-sidebar__friend-box-->
+                <div class="chat-sidebar__friend-box">
+                    <img class="chat-sidebar__friend-box__img" src="images/friends/mariami.jpg" alt="Mariam Sarjveladze">
+                    <span class="chat-sidebar__friend-box__name">Mariam Sarjveladze</span>
+                    <span class="chat-sidebar__friend-box__online">
+                        1h
+                    </span>
+                </div><!--chat-sidebar__friend-box-->
+
+                <div class="chat-sidebar__friend-box">
+                    <img class="chat-sidebar__friend-box__img" src="images/friends/nika.jpg" alt="Nika Grdzelidze">
+                    <span class="chat-sidebar__friend-box__name">Nika Grdzelidze</span>
+                    <span class="chat-sidebar__friend-box__online">
+                        <span class="chat-sidebar__friend-box__online__bullet"></span>
+                    </span>
+                </div><!--chat-sidebar__friend-box-->
+                <div class="chat-sidebar__friend-box">
+                    <img class="chat-sidebar__friend-box__img" src="images/friends/guga.jpg" alt="Guga Chechelashvili">
+                    <span class="chat-sidebar__friend-box__name">Guga Chechelashvili</span>
+                    <span class="chat-sidebar__friend-box__online">
+                        <span class="chat-sidebar__friend-box__online__bullet"></span>
+                    </span>
+                </div><!--chat-sidebar__friend-box-->
+                <div class="chat-sidebar__friend-box">
+                    <img class="chat-sidebar__friend-box__img" src="images/friends/mariami.jpg" alt="Mariam Sarjveladze">
+                    <span class="chat-sidebar__friend-box__name">Mariam Sarjveladze</span>
+                    <span class="chat-sidebar__friend-box__online">
+                        1h
+                    </span>
+                </div><!--chat-sidebar__friend-box-->                
+                <div class="chat-sidebar__search">
+                    <input class="chat-sidebar__search__input" type="text" placeholder="Search">
+                </div><!--chat-sidebar__search-->
+            </div><!--chat-sidebar-->
+        </div><!--container-->
+        </div><!--wrapper-->
+    </section>
+</body>
+</html>
+<script src="js/scripts.js"></script>
