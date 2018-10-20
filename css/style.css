@@ -262,7 +262,7 @@ section.main-section .container {
     text-decoration: none;
     color: #333;
     width: 155px;
-    font-size: 14px;
+    font-size: 13px;
     display: block;
     line-height: 31px;
     padding-left: 28px;
@@ -348,13 +348,13 @@ h3.sidebar-left__heading.sidebar-left__heading--shortcut, .sidebar-left__heading
     align-items: center;
     border-bottom: 1px solid #dbdbdb;
 }
-.main-content__make-post__buttons_box__link { 
-    text-decoration: none; 
-    font-size: 13px;  
-    color: #365899;  
-    font-weight: bold;  
-    padding: 0px 8px;   
-    border-right: 1px solid #d4cfcf;    
+.main-content__make-post__buttons_box__link {
+    text-decoration: none;
+    font-size: 13px;
+    color: #365899;
+    font-weight: 500;
+    padding: 0px 8px;
+    border-right: 1px solid #d4cfcf;
     padding-left: 28px;
 }
 textarea#posts-textarea {
@@ -414,14 +414,14 @@ textarea#posts-textarea {
 .main-content__posting-box__list__link {
     line-height: 32px;
     display: block;
-    width: 92px;
+    width: 124px;
     text-decoration: none;
     background-color: #f5f6f7 !important;
     border-radius: 16px;
     padding-left: 40px;
     margin-right: 8px;
     color: #4b4f56;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
     padding-top: 0px;
 }
@@ -430,6 +430,8 @@ textarea#posts-textarea {
 }
 .main-content__posting-box__list--list {
     background: url(../images/icon-sprites.png) no-repeat 0px -442px;
+    width: 80px;
+    /* background-color: red !important; */
 }
 .main-content__posting-box__list--photo-video {
     background: url(../images/icon-sprites.png) no-repeat 0px -479px;
@@ -438,7 +440,7 @@ textarea#posts-textarea {
     background: url(../images/icon-sprites.png) no-repeat 0px -518px;
 }
 .main-content__posting-box__list--dots {
-    width: 10px;
+    width: 47px;
     padding-left: 0px;
     font-weight: bold;
     padding: 0px 18px;
@@ -457,7 +459,8 @@ textarea#posts-textarea {
 }
 .main-content__post-box {
     width: 100%;
-    min-height: 530px;
+    /* min-height: 530px; */
+    height: auto;
     background: #fff;
     margin: 10px 0px;
     border: 1px solid #dbdbdb;
@@ -477,6 +480,8 @@ header.main-content__post-box__header {
     height: 40px;
     display: flex;
     padding: 10px;
+    /* background: red; */
+    margin-bottom: 15px;
 }
 
 .main-content__post-box__header__author {
@@ -517,7 +522,7 @@ article.main-content__post-box__article p {
 article.main-content__post-box__article a {
     text-decoration: none;
     color: #365899;
-    font-size: 14px;
+    font-size: 13px;
 }
 article.main-content__post-box__article a:hover {
     text-decoration: underline;
@@ -571,7 +576,7 @@ article.main-content__post-box__article a:hover {
     width: 33.33%;
     text-align: center;
     text-decoration: none !important;
-    font-size: 15px !important;
+    font-size: 14px !important;
     font-weight: 500;
     color: #737373 !important;
     line-height: 34px;
@@ -613,7 +618,7 @@ header.sidebar-right__stories__header h3 {
 
 header.sidebar-right__stories__header a {
     text-decoration: none;
-    font-size: 14px;
+    font-size: 13px;
     color: #365899;
 }
 
@@ -641,7 +646,7 @@ header.sidebar-right__stories__header h3 a {
 }
 
 .sidebar-right__stories__box a {
-    font-size: 14px;
+    font-size: 13px;
     text-decoration: none;
     color: #365899;
     font-weight: 500;
@@ -791,7 +796,7 @@ section.sidebar-right__ads img {
 }
 
 .sidebar-right__ads__ad h3 a {
-    font-size: 14px;
+    font-size: 13px;
     text-decoration: none;
     color: #365899;
 }
@@ -803,7 +808,7 @@ section.sidebar-right__ads img {
 }
 
 .sidebar-right__ads__ad p {
-    font-size: 14px;
+    font-size: 13px;
     color: #636060;
 }
 
@@ -812,7 +817,7 @@ section.sidebar-right__ads img {
 }
 section.sidebar-right__settings a {
     text-decoration: none;
-    font-size: 14px;
+    font-size: 13px;
     color: #969696;
 }
 section.sidebar-right__settings a:hover {
@@ -823,7 +828,7 @@ section.sidebar-right__settings {
     padding-right: 0px;
 }
 section.sidebar-right__settings span {
-    font-size: 14px;
+    font-size: 13px;
     color: #464646;
 }
 .sidebar-right__settings__link--choices, .sidebar-right__settings__link--more {

@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="css/player.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Facebook.com</title>
 </head>
@@ -125,7 +126,8 @@
                             <li class="main-content__posting-box__list__item"><a class="main-content__posting-box__list__link main-content__posting-box__list--dots" href=""><span>...</span></a></li>
                         </ul>
                     </div>
-                </section><!--main-content__make-post-->
+                </section><!--main-content__make-post-->				
+				
                 <section class="main-content__post-box">
                     <header class="main-content__post-box__header">
                         <a href=""><img src="images/posts/irisi/irisi_logo.png" alt="" class="main-content__post-box__header__image"></a>
@@ -163,7 +165,7 @@
                 </section><!--main-content__post-box-->
                 <section class="main-content__post-box">
                     <header class="main-content__post-box__header">
-                        <a href=""><img src="images/posts/irisi/irisi_logo.png" alt="" class="main-content__post-box__header__image"></a>
+                        <a href=""><img src="images/posts/elit/elit_logo.png" alt="" class="main-content__post-box__header__image"></a>
                         <div class="main-content__post-box__header__author">
                             <a class="main-content__post-box__header__author__link" href="#">Elit Electronics • ელიტ ელექტრონიქსი</a>
                             <span class="main-content__post-box__header__author__date">Sponsored <a title="Public" href="" class="main-content__post-box__header__author__date__status"></a></span>
@@ -227,7 +229,7 @@
                 </section><!--main-content__post-box-->
                 <section class="main-content__post-box">
                     <header class="main-content__post-box__header">
-                        <a href=""><img src="images/posts/irisi/irisi_logo.png" alt="" class="main-content__post-box__header__image"></a>
+                        <a href=""><img src="images/posts/elit/elit_logo.png" alt="" class="main-content__post-box__header__image"></a>
                         <div class="main-content__post-box__header__author">
                             <a class="main-content__post-box__header__author__link" href="#">Elit Electronics • ელიტ ელექტრონიქსი</a>
                             <span class="main-content__post-box__header__author__date">Sponsored <a title="Public" href="" class="main-content__post-box__header__author__date__status"></a></span>
@@ -246,6 +248,77 @@
                         <div class="main-content__post-box__article__reaction-box">
                             <div class="main-content__post-box__article__reaction-box__smiles main-content__post-box__article__reaction-box__smiles--elit"><a href="">1K</a></div>
                             <div class="main-content__post-box__article__reaction-box__comments"><a href="">23 Comments</a>&nbsp;&nbsp;<a href="">24 Shares</a></div>
+                        </div>     
+                        <div class="main-content__post-box__article__react-box">
+                            <a href="#" class="main-content__post-box__article__react-box__link main-content__post-box__article__react-box__link--like">Like</a>
+                            <a href="#" class="main-content__post-box__article__react-box__link main-content__post-box__article__react-box__link--comments">Comments</a>
+                            <a href="#" class="main-content__post-box__article__react-box__link main-content__post-box__article__react-box__link--share">Share</a>
+                        </div>             
+                    </article>
+                </section><!--main-content__post-box-->	
+				
+				<section class="main-content__post-box">
+                    <header class="main-content__post-box__header">
+                        <a href=""><img src="images/posts/tbc/tbc_logo.png" alt="" class="main-content__post-box__header__image"></a>
+                        <div class="main-content__post-box__header__author">
+                            <a class="main-content__post-box__header__author__link" href="#">თიბისი ბიზნესისთვის - TBC For Business</a>
+                            <span class="main-content__post-box__header__author__date">October 15 at 1:45 PM <a title="Public" href="" class="main-content__post-box__header__author__date__status"></a></span>
+                        </div>
+                        <div class="main-content__post-box__header__menu">...</div>
+                    </header>
+                    <article class="main-content__post-box__article">
+                        <div class="main-content__post-box__article__description">
+                            <p>გაიმარტივე ყველანაირი საბანკო ოპერაცია განახლებული ინტერნეტ ბანკით შენი ბიზნესის სამართავად.<br>
+								<a href="#">https://tbconline.ge/business</a>
+							</p>
+                        </div>   
+
+						
+                        <!--<a href="#">-->
+							<div class="videoPlayerContainer noselect" id="videoPlayerContainer">
+								<div id="videoThumbnail">
+									<canvas id="myCanvas"></canvas>
+								</div><!--videoThumbnail-->
+								<video id="videoPlayer">
+									<source src="videos/1080.mp4">
+								</video>
+
+								<div class="videoPlayerContainer__controls" id="controls">
+									<div id="time">0 : 00 <span class="forwardSlash">/</span> 3 : 39</div>
+
+									<div class="volumeWrapper">
+										<div id="muteBtn"></div><!--muteBtn-->  
+										<div class="" id="volumeCont">
+										<div id="volumeBar"></div>
+										</div><!--volumeCont-->
+									</div><!--volumeWrapper-->
+
+									<div id="videoSettings">
+										<div class="videoSettings__title"></div>
+										<div class="videoSettings__qualities" id="videoSettings__qualities">
+											<h3>Quality</h3>
+											<div><input type="radio" name="quality" value="auto" id="auto"><label for="auto">Auto</label></div>
+											<div><input type="radio" name="quality" value="1080p" id="$1080p"><label for="$1080p">1080p</label></div>
+											<div><input type="radio" name="quality" value="720p" id="$720p"><label for="$720p">720p</label></div>
+											<div><input type="radio" name="quality" value="480p" id="$480p"><label for="$480p">480p</label></div>
+											<div><input type="radio" name="quality" value="360p" id="$360p"><label for="$360p">360p</label></div>
+										</div>
+									</div><!--videoSettings-->
+									<div id="fullScreen">
+										<div class="fullScreen__title"></div>
+									</div><!--fullScreen-->
+									<div id="progressBarCont">
+										<div id="progressBar"></div>
+									</div><!--progressBarCont-->           
+									<button id="playBtn"></button>
+								</div><!--videoPlayerContainer__controls-->
+								<div id="virtualDiv"></div>
+							</div><!--videoPlayerContainer-->
+						<!--</a>--> 
+												
+                        <div class="main-content__post-box__article__reaction-box">
+                            <div class="main-content__post-box__article__reaction-box__smiles main-content__post-box__article__reaction-box__smiles--elit"><a href="">75K</a></div>
+                            <div class="main-content__post-box__article__reaction-box__comments"><a href="">54 Comments</a>&nbsp;&nbsp;<a href="">21 Shares</a></div>
                         </div>     
                         <div class="main-content__post-box__article__react-box">
                             <a href="#" class="main-content__post-box__article__react-box__link main-content__post-box__article__react-box__link--like">Like</a>
@@ -340,17 +413,17 @@
                         </section><!--sidebar-right__settings-->
                 </div><!--sticky-->
             </aside><!--sidebar sidebar-right-->
-            <div class="chat-sidebar">
+            <div class="chat-sidebar">                
                 <div class="chat-sidebar__friend-box">
-                    <img class="chat-sidebar__friend-box__img" src="images/friends/ana.jpg" alt="Ana Mchedlishvili">
-                    <span class="chat-sidebar__friend-box__name">Ana Mchedlishvili</span>
+                    <img class="chat-sidebar__friend-box__img" src="images/friends/parunov.jpg" alt="Giorgi Parunov">
+                    <span class="chat-sidebar__friend-box__name">Giorgi Parunov</span>
                     <span class="chat-sidebar__friend-box__online">
                         <span class="chat-sidebar__friend-box__online__bullet"></span>
                     </span>
                 </div><!--chat-sidebar__friend-box-->
-                <div class="chat-sidebar__friend-box">
-                    <img class="chat-sidebar__friend-box__img" src="images/friends/parunov.jpg" alt="Giorgi Parunov">
-                    <span class="chat-sidebar__friend-box__name">Giorgi Parunov</span>
+				<div class="chat-sidebar__friend-box">
+                    <img class="chat-sidebar__friend-box__img" src="images/friends/ana.jpg" alt="Ana Mchedlishvili">
+                    <span class="chat-sidebar__friend-box__name">Ana Mchedlishvili</span>
                     <span class="chat-sidebar__friend-box__online">
                         3h
                     </span>
@@ -408,14 +481,14 @@
                     <img class="chat-sidebar__friend-box__img" src="images/friends/ana.jpg" alt="Ana Mchedlishvili">
                     <span class="chat-sidebar__friend-box__name">Ana Mchedlishvili</span>
                     <span class="chat-sidebar__friend-box__online">
-                        <span class="chat-sidebar__friend-box__online__bullet"></span>
+                        3h
                     </span>
                 </div><!--chat-sidebar__friend-box-->
                 <div class="chat-sidebar__friend-box">
                     <img class="chat-sidebar__friend-box__img" src="images/friends/parunov.jpg" alt="Giorgi Parunov">
                     <span class="chat-sidebar__friend-box__name">Giorgi Parunov</span>
                     <span class="chat-sidebar__friend-box__online">
-                        3h
+                        <span class="chat-sidebar__friend-box__online__bullet"></span>
                     </span>
                 </div><!--chat-sidebar__friend-box-->
                 <div class="chat-sidebar__friend-box">
@@ -498,4 +571,5 @@
     </section>
 </body>
 </html>
+<script src="js/player.js"></script>
 <script src="js/scripts.js"></script>

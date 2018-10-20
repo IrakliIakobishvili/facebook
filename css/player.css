@@ -1,0 +1,334 @@
+	* {
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+    }
+    body {
+        margin: 0px;
+        padding: 0px;
+        padding-top: 100px;
+        background-color: #e9ebee;
+    }
+    video::-webkit-media-controls {
+        display: none !important;
+    }
+    .videoPlayerContainer {
+        width: 500px;
+        width: 100%;
+        position: relative;
+        margin: auto;
+        /* margin-left: 50px; */
+        margin: 8px 0px 12px 0px;
+    }
+    .videoPlayerContainer__controls {
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        /* bottom: 5px; */
+        opacity: 0;
+        height: 34px;
+        height: 45px;
+        box-sizing: content-box;
+        z-index: 2;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.3+100 */
+        background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#4d000000',GradientType=0 ); /* IE6-9 */
+    }
+    /* .videoPlayerContainer__controls:hover * {
+        opacity: 1;
+    } */
+    #videoPlayer {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        object-fit: fill;
+        height: 100%;
+    }
+    #progressBarCont {
+        width: 200px;
+        height: 3px;
+        background-color: #c4d2e7;
+        display: flex;
+        box-sizing: border-box;
+        cursor: pointer;
+        position: absolute;
+        left: 150px;
+        top: 0px;
+        bottom: 0px;
+        margin: auto;
+    }
+    #progressBar {
+        width: 0px;
+        background: #4080ff;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    #progressBar::after {
+        content: "";
+        display: block;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #fff;
+        position: absolute;
+        right: -10px;
+    }
+    #playBtn {
+        margin: 10px 0px;
+        left: 20px;
+        top: 3px;
+        bottom: 0px;
+        margin: auto;
+        height: 20px;
+        position: absolute;
+        left: 35px;
+        background-image: url("../images/player/spritesheet.png");
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-position: -2px -221px;
+        width: 20px;
+        height: 20px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+    #time {
+        margin-top: 5px;
+        height: 20px;
+        display: inline-block;
+        font-size: 12px;
+        left: 70px;
+        bottom: 0px;
+        top: 0px;
+        margin: auto;
+        font-size: 12px;
+        position: absolute;
+        letter-spacing: -1px;
+        font-weight: bold;
+        color: #fff;
+    }
+    #volumeCont {
+        width: 15px;
+        height: 55px;
+        border-radius: 5px;
+        width: 8px;
+        border-radius: 8px;
+        display: inline-block;
+        cursor: pointer;
+        position: absolute;
+        left: 6px;
+        bottom: 31px;
+        opacity: 0;
+        /* display: none; */
+        background-color: rgba(255,255,255,1);
+        background-color: #c4d2e7;
+        /* z-index: 55; */
+        /* z-index: -201 !important; */
+        visibility: hidden;
+    }
+    .volumeWrapper:hover #volumeCont {
+        opacity: 1;
+        visibility: visible;
+    }
+    #volumeBar {
+        width: 100%;
+        height: 100%;
+        background-color: #4080ff;
+        border-radius: 8px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        bottom: -1px;
+        justify-content: center;
+    }
+    #volumeBar::after {
+        content: "";
+        display: block;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: #fff;
+        position: absolute;
+        top: -10px;
+        left: -4px;
+    }
+    #muteBtn {
+        position: absolute;
+        bottom: 0px;
+        width: 21px;
+        height: 21px;
+        background-image: url(../images/player/spritesheet.png);
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-position: 0px -177px;
+    }
+    #fullScreen {
+        position: absolute;
+        left: 406px;
+        top: -1px;
+        bottom: 0px;
+        margin: auto;
+        width: 18px;
+        height: 18px;
+        background: transparent;
+        background-image: url(../images/player/spritesheet.png);
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-position: -43px -220px;
+    }
+    .forwardSlash {
+        padding: 0px 2px;
+    }
+    #progressBar:hover:after {
+        width: 13px;
+        height: 13px;
+    }
+    #progressBar:active:after {
+        background-color: #4080ff;
+        border: 3px solid #fff;
+    }
+    #progressBarCont:hover {
+        height: 5px;
+        border-radius: 3px;
+    }
+    #videoSettings {
+        width: 23px;
+        height: 22px;
+        position: absolute;
+        left: 371px;
+        background-image: url("../images/player/spritesheet.png");
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-position: -39px -257px;
+        bottom: 0px;
+        top: 0px;
+        margin: auto;
+    }
+    .videoSettings__title, .fullScreen__title {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .videoSettings__title::after, .fullScreen__title::after {
+        content: "Settings";
+        position: absolute;
+        background: #434846;
+        top: -32px;
+        font-size: 12px;
+        padding: 5px 8px;
+        color: #fff;
+        border-radius: 2px;
+        display: none;
+        z-index: 1;
+    }
+    .fullScreen__title::after {
+        content: "Click to enlarge";
+        white-space: nowrap;
+    }
+    .videoSettings__title::before, .fullScreen__title::before {
+        content: "";
+        position: absolute;
+        background: #434846;
+        top: -11px;
+        left: 7px;
+        display: none;
+        width: 7px;
+        height: 7px;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        z-index: 1;
+    }
+    .videoSettings__title:hover::after, .videoSettings__title:hover::before {
+        display: block;
+    }
+    .fullScreen__title:hover::after, .fullScreen__title:hover::before {
+        display: block;
+    }
+    .videoSettings__qualities {
+        width: 100px;
+        height: 185px;
+        background-color: rgba(0, 0, 0, .8);
+        border-radius: 3px;
+        bottom: 30px;
+        color: #fff;
+        font-size: 12px;
+        line-height: 24px;
+        padding: 12px 20px 6px;
+        position: absolute;
+        right: -20px;
+        cursor: default;
+        display: none;
+    }
+    .videoSettings__qualities h3 {
+        margin: 0px;
+        padding: 0px;
+        font-size: 12px;
+        font-weight: normal;
+    }
+    .videoSettings__qualities > div {
+        display: flex;
+        align-items: center;
+        margin-bottom: 3px;
+    }
+    .videoSettings__qualities input, .videoSettings__qualities label {
+        cursor: pointer;
+    }
+    .videoSettings__qualities input {
+        margin-right: 5px;
+    }
+    .videoSettings__qualities input:checked + label {
+        font-weight: bold;
+    }
+    .muteBtn {
+        background-position: -21px -177px !important;
+    }
+    .muteBtn--one {
+        width: 13px !important;
+    }
+    .muteBtn--two {
+        width: 16px !important;
+    }
+    .volumeWrapper {
+        position: absolute;
+        width: 20px;
+        height: 32px;
+        left: 438px;
+        bottom: 12px;
+    }
+    .noselect {
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+    }
+    
+    #videoThumbnail {
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        background: #e9ebee;
+        z-index: 10;
+        cursor: pointer;
+    }
+    #playImg {
+        background-image: url("../images/player/spritesheet.png");
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+        position: absolute;
+        bottom: 0px;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        width: 74px;
+        height: 73px;
+        margin: auto;
+        border: none;
+    }
